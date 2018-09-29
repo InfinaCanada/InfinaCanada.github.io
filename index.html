@@ -1,11 +1,11 @@
 <html>
 <head>
-		<title><a href="http://www.infina.ca" style="text-decoration:none">Infina</a> - Home</Title>
+		<title> Infina - Home</Title>
 		<link rel="icon" type="image/png" href="Favicon.ico">
 		<link rel = "stylesheet" type = "text/css" href = "https://infinacanada.github.io/Reasources/css.css" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
-		<style>
-			dsub {
+				<style>
+		dsub {
 	color: #455A64;
 	text-align: Left;
 	text-decoration: none;
@@ -132,7 +132,7 @@ Footer_Info {
 	height: 60px;
 }
 
-#header a {
+.print {
 	font-family: 'Raleway', sans-serif;
 	float: Right;
 	display: block;
@@ -144,16 +144,21 @@ Footer_Info {
 	height: 100%;
 }
 
+.print:hover {
+	font-family: 'Raleway', sans-serif;
+	background: linear-gradient(to right, #5E35B1 , #8E24AA);
+	color: #ECEFF1;
+}
+
 .main {
 	background-color: #ffffff;
 	padding: 100px;
 	color: #263238;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	width:100px; 
+	width:650px; 
 	margin:20px auto;
 	margin-top: 80px;
-	Float: left;
 }
 
 .main:hover {
@@ -174,15 +179,15 @@ Footer_Info {
 
 <div id="header">
 
-	<Doc_Title><b style="cursor:pointer;">Infina</b> - Home</Doc_Title>
+	<Doc_Title><b style="cursor:pointer;"> <a href="http://www.infina.ca" style="color:#ffffff; text-decoration: none;">Infina</a></b> - Home </Doc_Title>
 </div>
 
 <div class="main" id="main">
 
 </div>
 <div class="Footer">
-<Footer_Link style="cursor:pointer;"> <a href="http://www.infina.ca" style="text-decoration:none">Home</a> </Footer_Link>
-<Footer_Link style="cursor:pointer;"> <a href="http://infina.ca/Articles/User%20Agreement/" style="text-decoration:none">User Agrement</a> </Footer_Link> 
+<a href="http://www.infina.ca" style="text-decoration:none"> <Footer_Link style="cursor:pointer;"> Home </Footer_Link> </a> 
+<a href="http://infina.ca/Articles/User%20Agreement/" style="text-decoration:none"> <Footer_Link style="cursor:pointer;">  User Agrement </Footer_Link> </a>  
 </div>
 </body>
 </html>
