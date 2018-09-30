@@ -1,11 +1,11 @@
 <html>
 <head>
-		<link rel="canonical" href"{{site.url}}{{page.url}}">
-		<script>
+				<link rel="canonical" href"{{site.url}}{{page.url}}">
+			<script>
 			if(window.location.protocol != 'https:') {
-  location.href = location.href.replace("http://", "https://");
-}
-	</script>
+			location.href = location.href.replace("http://", "https://");
+			}
+			</script>
 		<title> Infina - Home</Title>
 		<link rel="icon" type="image/png" href="Favicon.ico">
 		<link rel = "stylesheet" type = "text/css" href = "https://infinacanada.github.io/Reasources/css.css" />
@@ -27,7 +27,19 @@ p {
 	line-height: 30px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 1000;
-	text-indent: 50px;
+	text-indent: 25px;
+	margin-left: 150px;
+}
+
+lenendText {
+	color: #263238;
+	text-align: Justify;
+	text-decoration: none;
+	font-size: 17px; 
+	line-height: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 1000;
+	letter-spacing: 20px
 }
 
 .date {
@@ -71,13 +83,26 @@ light {
 }
 H1 {
 	color: #455A64;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
-	font-size: 70px;
+	font-size: 50px;
 	font-family: 'Raleway', sans-serif;
 	Margin-top: 10px;
 	margin-bottom: 0;
+	margin-left: 150px;
 }
+
+Letter {
+	color: #455A64;
+	text-align: left;
+	text-decoration: none;
+	font-size: 50px;
+	font-family: 'Raleway', sans-serif;
+	Margin-top: 10px;
+	margin-bottom: 0;
+	margin-left: 40px;
+}
+	
 th, td {
     border-bottom: 1px solid #ddd;
 }
@@ -138,33 +163,36 @@ Footer_Info {
 	height: 60px;
 }
 
-.print {
-	font-family: 'Raleway', sans-serif;
-	float: Right;
-	display: block;
-	color: #ECEFF1;
-	text-align: center;
-	padding: 20px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	height: 100%;
-}
-
-.print:hover {
-	font-family: 'Raleway', sans-serif;
-	background: linear-gradient(to right, #5E35B1 , #8E24AA);
-	color: #ECEFF1;
-}
-
 .main {
 	background-color: #ffffff;
 	padding: 100px;
-	color: #263238;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	width:650px; 
-	margin:20px auto;
-	margin-top: 80px;
+	margin:20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 200px;
+	width: calc(100% - 90px);
+	padding: 20px;
+	overflow: auto;
+}
+
+.Cover_art {
+	padding: 20px;
+	height: 160;
+	width: 90;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	font-family: 'Raleway', sans-serif;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 130px;
+	float: left;
+}
+.spacer {
+	height: 60px;
+	width: 100%
 }
 
 .main:hover {
@@ -179,6 +207,29 @@ Footer_Info {
 	overflow: hidden;
 	box-shadow: inset 0 10px 9px -7px rgba(0,0,0,0.4);
 }
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #727272; 
+	border-radius: 10px;
+	border: 2px solid #F5F5F5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #424242; 
+	border-radius: 10px;
+}
+
 		</style>
 </head>
 <body bgcolor="#F5F5F5">
@@ -187,14 +238,89 @@ Footer_Info {
 
 	<Doc_Title><b style="cursor:pointer;"> <a href="https://www.infina.ca" style="color:#ffffff; text-decoration: none;">Infina</a></b> - Home </Doc_Title>
 </div>
+<div class="spacer">
+</div>
+<div style="overflow: auto; height: calc(100% - 60px);">
 
-<div class="main" id="main">
+<div style="height: 20px;">
 
 </div>
+
+	<Letter ID="A"> <b> A </b> </Letter>
+
+	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
+		<div class="main">
+		<div class="cover_art" style="background: linear-gradient(to bottom, #e74c3c , #e67e22);">
+		A
+		</div>
+		<H1> Article A </H1>
+		<p> 
+		Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit. Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod. Tempor 
+		</p>
+		</div>
+	</a>
+
+		<Letter ID="B"> <b> B </b> </Letter>
+	
+	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
+		<div class="main">
+		<div class="cover_art" style="background: linear-gradient(to bottom, #3498db , #2ecc71);">
+		B
+		</div>
+		<H1> Article B </H1>
+		<p> 
+		Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit. Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod. Tempor 
+		</p>
+		</div>
+	</a>
+
+	<Letter ID="C"> <b> C </b> </Letter>
+	
+	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
+		<div class="main">
+		<div class="cover_art" style="background: linear-gradient(to bottom, #2ecc71 , #e74c3c);">
+		C
+		</div>
+		<H1> Article C </H1>
+		<p> 
+		Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit. Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod. Tempor 
+		</p>
+		</div>
+	</a>
+
+	<Letter ID="D"> <b> D </b> </Letter>
+
+	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
+		<div class="main">
+		<div class="cover_art" style="background: linear-gradient(to bottom, #9b59b6 , #3498db);">
+		D
+		</div>
+		<H1> Article D </H1>
+		<p> 
+		Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit. Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod. Tempor 
+		</p>
+		</div>
+	</a>
+
+	<Letter ID="E"> <b> E </b> </Letter>
+	
+	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
+		<div class="main">
+		<div class="cover_art" style="background: linear-gradient(to bottom, #9b59b6 , #e74c3c);">
+		E
+		</div>
+		<H1> Article E </H1>
+		<p> 
+		Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit. Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod. Tempor 
+		</p>
+		</div>
+	</a>
+
 <div class="Footer">
 <a href="https://www.infina.ca" style="text-decoration:none"> <Footer_Link style="cursor:pointer;"> Home </Footer_Link> </a> 
 <a href="https://infina.ca/Articles/User%20Agreement/" style="text-decoration:none"> <Footer_Link style="cursor:pointer;">  User Agrement </Footer_Link> </a> 
 <a href="https://infina.ca/Articles/About_Us/" style="text-decoration:none"> <Footer_Link style="cursor:pointer;">  About Us </Footer_Link> </a>
+</div>
 </div>
 </body>
 </html>
