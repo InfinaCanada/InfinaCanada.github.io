@@ -1,17 +1,13 @@
 <html>
 <head>
 				<link rel="canonical" href"{{site.url}}{{page.url}}">
-			<script>
-			if(window.location.protocol != 'https:') {
-			location.href = location.href.replace("http://", "https://");
-			}
-			</script>
+			
 		<title> Infina - Home</Title>
 		<link rel="icon" type="image/png" href="Favicon.ico">
 		<link rel = "stylesheet" type = "text/css" href = "https://infinacanada.github.io/Reasources/css.css" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
 				<style>
-		dsub {
+dsub {
 	color: #455A64;
 	text-align: Left;
 	text-decoration: none;
@@ -245,8 +241,24 @@ Footer_Info {
 <div style="height: 20px;">
 
 </div>
+<H1 id="Greeting"style="margin-left: 20px;"></H1>
+<br>
 
-	<Letter ID="A"> <b> A </b> </Letter>
+<script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+    var greet;
+    if (hrs < 12)
+        greet = 'Good Morning,';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon,';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+    document.getElementById('Greeting').innerHTML =
+        greet + ' Here are our latest articles:';
+</script> 
+
+	<Letter ID="A">A</Letter>
 
 	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
 		<div class="main">
@@ -260,7 +272,7 @@ Footer_Info {
 		</div>
 	</a>
 
-		<Letter ID="B"> <b> B </b> </Letter>
+		<Letter ID="B">B</Letter>
 	
 	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
 		<div class="main">
@@ -274,7 +286,7 @@ Footer_Info {
 		</div>
 	</a>
 
-	<Letter ID="C"> <b> C </b> </Letter>
+	<Letter ID="C">C</Letter>
 	
 	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
 		<div class="main">
@@ -288,7 +300,7 @@ Footer_Info {
 		</div>
 	</a>
 
-	<Letter ID="D"> <b> D </b> </Letter>
+	<Letter ID="D">D</Letter>
 
 	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
 		<div class="main">
@@ -302,7 +314,7 @@ Footer_Info {
 		</div>
 	</a>
 
-	<Letter ID="E"> <b> E </b> </Letter>
+	<Letter ID="E">E</Letter>
 	
 	<a style="text-decoration: none;" href="https://infina.ca/Articles/Article_A/">
 		<div class="main">
