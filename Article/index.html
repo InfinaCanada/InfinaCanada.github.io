@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title id="SiteTitle"></title>
+  <link rel="icon" type="image/png" href="Favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+  <script language="javascript" type="text/javascript">
+      function printDiv(main) {
+          var divElements = document.getElementById(main).innerHTML;
+          var oldPage = document.body.innerHTML;
+          document.body.innerHTML =
+            "<html><head><title></title></head><body><footer></footer>" +
+            divElements + "</body>";
+          window.print();
+          document.body.innerHTML = oldPage;
+      }
+  </script>
+  <style type="text/css">
+    html, body {
+      	height: 100%;
+    		margin: 0px;
+    	}
+    	.NavBar {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: linear-gradient(to right, #8E24AA , #5E35B1);
+      	position: fixed;
+      	top: 0;
+      	width: 100%;
+      	height: 60px;
+        overflow: hidden;
+    	}
+
+      .Title {
+        font-family: 'Thasadith', sans-serif;
+        float: left;
+      	display: block;
+      	color: #f2f2f2;
+      	text-align: center;
+      	text-decoration: none;
+      	font-size: 30px;
+        line-height: 5px;
+        text-indent: 10px;
+      }
+      .main {
+      	background-color: #ffffff;
+      	padding: 100px;
+      	color: #263238;
+      	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      	width:650px;
+      	margin:20px auto;
+      	margin-top: 40px;
+      }
+      .main:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+      .DocTitle{
+        Text-Align: center;
+        font-family: 'Thasadith', sans-serif;
+        top: 0px;
+        font-size: 60px;
+        line-height: 1;
+      }
+      .DocInfo{
+        Text-Align: center;
+        font-family: 'Thasadith', sans-serif;
+        top: 0px;
+        font-size: 20px;
+        line-height: 1;
+      }
+      .subtitle {
+        Text-Align: Left;
+        font-family: 'Thasadith', sans-serif;
+        top: 0px;
+        font-size: 30px;
+        line-height: 1;
+        padding-top: 75px;
+        margin-top: -75px;
+        -webkit-background-clip: content-box;
+        background-clip: content-box;
+      }
+      .BodyText {
+        Text-Align: Left;
+        font-family: 'Thasadith', sans-serif;
+        top: 0px;
+        font-size: 20px;
+        line-height: 1;
+        text-indent: 50px;
+      }
+      .index {
+        Text-Align: Left;
+        font-family: 'Thasadith', sans-serif;
+        top: 0px;
+        font-size: 20px;
+        line-height: 1;
+      }
+      .print {
+        font-family: 'Thasadith', sans-serif;
+      	float: Right;
+      	display: block;
+      	color: #ECEFF1;
+      	text-align: center;
+      	padding: 20px 16px;
+      	text-decoration: none;
+      	font-size: 17px;
+      	height: 100%;
+      }
+
+      .print:hover {
+      	background: linear-gradient(to right, #5E35B1 , #8E24AA);
+      	color: #ECEFF1;
+      }
+      .Footer {
+      	font-family: 'Raleway', sans-serif;
+      	background-color: #424242;
+      	top: 0;
+      	padding: 30px;
+      	overflow: hidden;
+      	box-shadow: inset 0 10px 9px -7px rgba(0,0,0,0.4);
+      }
+      Footer_Link {
+      	font-family: 'Raleway', sans-serif;
+      	float: left;
+      	color: #BDBDBD;
+      	text-align: Justify;
+      	text-decoration: none;
+      	font-size: 17px;
+      	line-height: 26px;
+      	Margin-left: 30px;
+      }
+
+      Footer_Link:hover {
+      	font-family: 'Raleway', sans-serif;
+      	color: #FAFAFA;
+      	text-align: Left;
+      	text-decoration: none;
+      	font-size: 17px;
+      	line-height: 26px;
+      }
+
+  </style>
+<div class="NavBar">
+
+  <div class="Title">
+  <p id="NavTitle"></p>
+  </div>
+
+  <a class="print" onclick="javascript:printDiv('main')" style="cursor:pointer;">Print</a>
+
+</div>
+</head>
+<body style="background-color: #F5F5F5;">
+  <div style="height:60px; width:100%;"> </div>
+  <div class="main" id="main">
+    <b><h1 class="DocTitle" id="DocTitle"></h1></b>
+    <h3 class="subtitle"> Index </h3>
+    <ul>
+      <p class="DocInfo" id="Index"> <p>
+    </ul>
+    <div id="Body"></div>
+  </div>
+  <div class="main">
+    <b><h1 class="DocTitle">Article Info</h1></b>
+    <h4 class="DocInfo" id="Publisher"> <h4>
+    <h4 class="DocInfo" id="DocAuthor"> <h4>
+    <h4 class="DocInfo" id="LastEdit"> <h4>
+    <h4 class="DocInfo" id="PublishedOn"> <h4>
+    <h4 class="DocInfo" id="Website"> <h4>
+    <h4 class="DocInfo" id="City"> <h4>
+  </div>
+</body>
+<footer>
+<script>
+function Title(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i<arr.length; i++) {
+    out +=
+    arr[i].Title;
+  }
+  document.getElementById("NavTitle").innerHTML = 'Infina - ' + out;
+  document.getElementById("DocTitle").innerHTML = out;
+  document.getElementById("SiteTitle").innerHTML = "Infina - " + out;
+}
+function Author(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i<arr.length; i++) {
+    out +=
+    arr[i].Author;
+  }
+  document.getElementById("DocAuthor").innerHTML = "Author : " + out;
+}
+function LastEdit(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i<arr.length; i++) {
+    out +=
+    arr[i].LastEdit;
+  }
+  document.getElementById("LastEdit").innerHTML = "Last Edited : " + out;
+}
+function PublishedOn(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i<arr.length; i++) {
+    out +=
+    arr[i].PublishedOn;
+  }
+  document.getElementById("PublishedOn").innerHTML = "Published On : " + out;
+}
+function City(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i<arr.length; i++) {
+    out +=
+    arr[i].City;
+  }
+  document.getElementById("City").innerHTML = "City : " + out;
+}
+function Website(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i<arr.length; i++) {
+    out +=
+    arr[i].Website;
+  }
+  document.getElementById("Website").innerHTML = "Website : " + out;
+}
+function Publisher(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i<arr.length; i++) {
+    out +=
+    arr[i].Publisher;
+  }
+  document.getElementById("Publisher").innerHTML = "Publisher : " + out;
+}
+function Body(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i<arr.length; i++) {
+    out += '<b><h3 class="subtitle" id="' + arr[i].SubTitle + '">' + arr[i].SubTitle + '</h3></b> <p class="BodyText">' +
+    arr[i].Text + '</p>';
+  }
+  document.getElementById("Body").innerHTML = out;
+  var index = "";
+  for(i = 0; i<arr.length; i++) {
+    index += '<li> <p class="index"> <a style="text-decoration: none; color: #000000;" href="#' + arr[i].SubTitle + '">' + arr[i].SubTitle + '</li></p></a>'
+  }
+  document.getElementById("Index").innerHTML = index;
+}
+</script>
+<script src="jsondata.js"></script>
+<div class="Footer">
+<a href="https://www.infina.ca" style="text-decoration:none"> <Footer_Link style="cursor:pointer;"> Home </Footer_Link> </a>
+<a href="https://infina.ca/Articles/User%20Agreement/" style="text-decoration:none"> <Footer_Link style="cursor:pointer;">  User Agrement </Footer_Link> </a>
+<a href="https://infina.ca/Articles/About_Us/" style="text-decoration:none"> <Footer_Link style="cursor:pointer;">  About Us </Footer_Link> </a>
+</div>
+</footer>
+</html>
